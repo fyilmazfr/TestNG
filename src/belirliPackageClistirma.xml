@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!--
+eger istedigimiz tum testlere ulasmak icin birden fazla hiyerarsi olusturmamiz gerekirse sonraki hiyerarsileri
+uygun adimdan baslatmamiz gerekir
+-->
+
+<suite name="belirli pacakage calistirma">
+
+    <test name="paket">
+        <packages>
+            <package name="tests.day17_Pom"></package>
+            <package name="tests.day18_pom"></package>
+
+        </packages>
+    </test>
+    <test name="ayri test clasi">
+        <classes>
+            <class name="tests.day19_smokeTest.NegatifLoginTest"></class>
+        </classes>
+    </test>
+</suite>
